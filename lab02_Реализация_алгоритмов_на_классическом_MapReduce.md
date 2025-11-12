@@ -121,6 +121,7 @@ hello	2
 world	1
 ```
 ![СКРИНШОТ 1: Локальный тест WordCount](./image/WordCount.png)
+
 📷 *[СКРИНШОТ 1: Локальный тест WordCount]*
 
 ---
@@ -144,9 +145,11 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar \
 -reducer "python3 reducer_wc.py"
 ```
 ![СКРИНШОТ 2: Команда запуска Hadoop Streaming](./image/start_hadoop_streaming.png)
+
 📷 *[СКРИНШОТ 2: Команда запуска Hadoop Streaming]*
 
 ![СКРИНШОТ 3: Успешное завершение WordCount в Hadoop](./image/wordcount_hadoop_success.png)
+
 📷 *[СКРИНШОТ 3: Успешное завершение WordCount в Hadoop]*
 
 
@@ -248,6 +251,7 @@ cat grades.txt | python3 mapper_avg.py | sort | python3 reducer_avg.py
 ```
 local_test_avg.png
 ![СКРИНШОТ 4: Локальный тест средней оценки](./image/local_test_avg.png)
+
 📷 *[СКРИНШОТ 4: Локальный тест средней оценки]*
 
 ---
@@ -278,6 +282,7 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar \
 hdfs dfs -cat /user/student/output_avg/part-00000
 ```
 ![СКРИНШОТ 5: Результаты средней оценки из HDFS](./image/hadoop_test_avg.png)
+
 📷 *[СКРИНШОТ 5: Результаты средней оценки из HDFS]*
 
 ---
